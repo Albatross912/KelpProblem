@@ -27,7 +27,7 @@ This script is designed to read data from a CSV file, convert it to JSON format,
 3. Navigate to the project directory:
 
     ```
-    cd csv-to-postgresql
+    cd KelpProblem
     ```
 
 4. Install dependencies:
@@ -36,7 +36,7 @@ This script is designed to read data from a CSV file, convert it to JSON format,
     npm install
     ```
 
-5. Prepare your CSV file and update the `csvFilePath` variable in `index.js` with the path to your CSV file.
+5. Update the `csvFilePath` variable in `parser.js` with the path to your CSV file if new CSV file is added.
 
 6. Run the script:
 
