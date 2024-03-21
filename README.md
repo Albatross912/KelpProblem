@@ -55,6 +55,10 @@ This process allows for efficient handling of large datasets stored in CSV forma
 - `fs`: Node.js file system module for reading files.
 - `pg`: PostgreSQL client for Node.js.
 
+##
+Note: this code first convert the csv file in json format and then push into psql
+
+
 ## Ouputs
 ![image](https://github.com/Albatross912/KelpProblem/assets/80098578/80a05a64-82ee-4a28-85ec-54eeccf5f9ff)
 ![image](https://github.com/Albatross912/KelpProblem/assets/80098578/04546128-47a9-41a1-8c68-e4b0cb67e143)
