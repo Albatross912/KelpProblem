@@ -21,13 +21,13 @@ This script is designed to read data from a CSV file, convert it to JSON format,
 2. Clone this repository to your local machine:
 
     ```
-    git clone https://github.com/Albatross912/KelpProblem.git
+    git clone https://github.com/Albatross912/csv-to-json-postgresql.git
     ```
 
 3. Navigate to the project directory:
 
     ```
-    cd KelpProblem
+    cd csv-to-json-postgresql
     ```
 
 4. Install dependencies:
