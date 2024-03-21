@@ -41,7 +41,7 @@ This script is designed to read data from a CSV file, convert it to JSON format,
 6. Run the script:
 
     ```
-    node index.js
+    node parser.js
     ```
 
 ## Dependencies
