@@ -10,7 +10,7 @@ const pool = new Pool({
 });
 
 const csvFilePath = "./file.csv";
-
+// Custom function to convert a array into json format
 function convertToJSON(array) {
   let jsonObj = {};
 
@@ -36,6 +36,7 @@ function convertToJSON(array) {
 
 let tempData;
 let idx = 0;
+// function to replace the data with empty object using recurrsion
 function replaceEmptyWithData(obj) {
   for (let key in obj) {
     if (typeof obj[key] === "object" && obj[key] !== null) {
@@ -48,6 +49,7 @@ function replaceEmptyWithData(obj) {
   }
 }
 
+// reading the CSV file and processing the data
 fs.readFile(csvFilePath, "utf8", (err, fileData) => {
   if (err) {
     console.error("Error reading CSV file:", err);
@@ -72,6 +74,7 @@ fs.readFile(csvFilePath, "utf8", (err, fileData) => {
   processData(jsonDatas);
 });
 
+// adding the processed data into the database
 function processData(jsonDatas) {
   pool.connect((err, client, done) => {
     if (err) {
@@ -121,7 +124,7 @@ function processData(jsonDatas) {
     });
   });
 }
-
+// additional function for performing calculation of age percentage
 function calculateAgeDistribution(ages) {
   const ageGroups = {
     "< 20": 0,
